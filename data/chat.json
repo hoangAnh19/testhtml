@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T08:13:10.898Z",
+  "updatedAt": "2026-05-20T08:13:20.879Z",
   "messages": [
     {
       "id": "1779264249696-e4dfaff5-4299-4d92-b7cc-8f35f0886d4c",
@@ -21,6 +21,13 @@
       "name": "Người 2",
       "text": "Em tối mai đi ăn khai trương nhà hàng rồi ạ",
       "createdAt": "2026-05-20T08:13:09.996Z"
+    },
+    {
+      "id": "1779264798720-24d57706-22fa-4fa9-b515-c595dac3a37b",
+      "author": "person_b",
+      "name": "Người 2",
+      "text": "Sao phải nt ở đây á",
+      "createdAt": "2026-05-20T08:13:18.720Z"
     }
   ]
 }
