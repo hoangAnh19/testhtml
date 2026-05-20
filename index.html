@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat 2 Người</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="chat-panel" aria-label="Khung chat">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">GitHub JSON Chat</p>
+          <h1>Chat 2 người</h1>
+        </div>
+        <div class="status-pill" id="statusPill">
+          <span class="status-dot"></span>
+          <span id="statusText">Đang tải</span>
+        </div>
+      </header>
+
+      <section class="setup-grid" aria-label="Cài đặt chat">
+        <label class="field">
+          <span>Bạn là</span>
+          <select id="identitySelect">
+            <option value="person_a">Người 1</option>
+            <option value="person_b">Người 2</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Tên hiển thị</span>
+          <input id="displayNameInput" type="text" maxlength="40" autocomplete="name" placeholder="Nhập tên của bạn">
+        </label>
+
+        <label class="field token-field">
+          <span>GitHub token để gửi tin</span>
+          <input id="tokenInput" type="password" autocomplete="off" placeholder="Dán token repo content write">
+        </label>
+
+        <button class="ghost-button" id="saveSettingsButton" type="button">Lưu cài đặt</button>
+      </section>
+
+      <section class="message-wrap" aria-live="polite">
+        <div class="empty-state" id="emptyState">
+          <strong>Chưa có tin nhắn</strong>
+          <span>Gửi tin đầu tiên để tạo lịch sử trong file JSON của repo.</span>
+        </div>
+        <ol class="messages" id="messages"></ol>
+      </section>
+
+      <form class="composer" id="messageForm">
+        <textarea id="messageInput" rows="1" maxlength="1000" placeholder="Nhập tin nhắn..." required></textarea>
+        <button id="sendButton" type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
