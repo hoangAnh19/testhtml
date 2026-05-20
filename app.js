@@ -23,7 +23,6 @@ const elements = {
   identitySelect: document.querySelector('#identitySelect'),
   displayNameInput: document.querySelector('#displayNameInput'),
   tokenInput: document.querySelector('#tokenInput'),
-  saveSettingsButton: document.querySelector('#saveSettingsButton'),
   messages: document.querySelector('#messages'),
   emptyState: document.querySelector('#emptyState'),
   messageForm: document.querySelector('#messageForm'),
@@ -54,7 +53,6 @@ function saveSettings() {
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state.settings));
   fillSettings();
-  setStatus('Đã lưu cài đặt', 'online');
 }
 
 function fillSettings() {
@@ -292,13 +290,16 @@ function resizeComposer() {
   elements.messageInput.style.height = `${Math.min(elements.messageInput.scrollHeight, 140)}px`;
 }
 
-elements.saveSettingsButton.addEventListener('click', saveSettings);
-
 elements.identitySelect.addEventListener('change', () => {
   if (!elements.displayNameInput.value.trim() || /^Người [12]$/.test(elements.displayNameInput.value.trim())) {
     elements.displayNameInput.value = defaultName(elements.identitySelect.value);
   }
+
+  saveSettings();
 });
+
+elements.displayNameInput.addEventListener('input', saveSettings);
+elements.tokenInput.addEventListener('input', saveSettings);
 
 elements.messageInput.addEventListener('input', resizeComposer);
 
