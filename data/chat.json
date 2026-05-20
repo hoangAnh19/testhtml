@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T08:04:10.838Z",
+  "updatedAt": "2026-05-20T08:11:18.126Z",
   "messages": [
     {
       "id": "1779264249696-e4dfaff5-4299-4d92-b7cc-8f35f0886d4c",
@@ -7,6 +7,13 @@
       "name": "HA",
       "text": "tối mai e bận cả tối à",
       "createdAt": "2026-05-20T08:04:09.696Z"
+    },
+    {
+      "id": "1779264677274-8811ba14-1efe-4f2c-b224-414141ecf38d",
+      "author": "person_a",
+      "name": "HA",
+      "text": "e phải nhập token nó giống như pass vậy",
+      "createdAt": "2026-05-20T08:11:17.274Z"
     }
   ]
 }
