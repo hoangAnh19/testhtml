@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T08:16:22.778Z",
+  "updatedAt": "2026-05-20T08:21:07.858Z",
   "messages": [
     {
       "id": "1779264249696-e4dfaff5-4299-4d92-b7cc-8f35f0886d4c",
@@ -42,6 +42,13 @@
       "name": "HA",
       "text": "nhắn ở kia thấy avt HP, HA lại nhớ HP :(((",
       "createdAt": "2026-05-20T08:16:22.104Z"
+    },
+    {
+      "id": "1779265267203-7cf0ef4b-9f11-4b33-91cf-6270c1992125",
+      "author": "person_b",
+      "name": "Người 2",
+      "text": "Bắt đầu biết nói điêu rồi đấy HA",
+      "createdAt": "2026-05-20T08:21:07.204Z"
     }
   ]
 }
