@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T08:13:20.879Z",
+  "updatedAt": "2026-05-20T08:15:59.006Z",
   "messages": [
     {
       "id": "1779264249696-e4dfaff5-4299-4d92-b7cc-8f35f0886d4c",
@@ -28,6 +28,13 @@
       "name": "Người 2",
       "text": "Sao phải nt ở đây á",
       "createdAt": "2026-05-20T08:13:18.720Z"
+    },
+    {
+      "id": "1779264958348-8d346d18-43a3-4dd7-95cb-14d581fcf4ca",
+      "author": "person_a",
+      "name": "HA",
+      "text": "e có thấy nhắn ở đây thú vị hơn k",
+      "createdAt": "2026-05-20T08:15:58.348Z"
     }
   ]
 }
